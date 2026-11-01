@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Larp It",
+    "slug": "larpit",
+    "scheme": "larpit",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.larpit.demo",
+      "buildNumber": "3"
+    },
+    "android": {
+      "package": "com.larpit.demo"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Larp It to help you frame and take your photo.",
+          "recordAudioAndroid": false,
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a photo to preview in Larp It.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logo.png",
+          "imageWidth": 220,
+          "backgroundColor": "#B5FF16"
+        }
+      ],
+      "expo-sharing",
+      "expo-asset",
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
