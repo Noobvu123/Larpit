@@ -1,0 +1,160 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> larpit@1.2.0 test
+> node --experimental-strip-types --test tests/*.test.mts tests/backend/*.test.mjs
+
+(node:26) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/index.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ complete three-shot flow, explicit manual review, previews and idempotent All done (23.264261ms)
+✔ photos-only and written-only branches validate independently (17.153019ms)
+✔ supports one, two and three stable photo slots and retakes preserve order (5.932019ms)
+✔ topic/tone edits invalidate generated captions and previews; photo edits invalidate previews (3.031821ms)
+✔ preview revision prevents stale confirmation and platform removal cannot leave captions (0.683724ms)
+✔ regeneration limit survives reopening; edited captions require explicit replacement (6.061638ms)
+✔ late model responses cannot overwrite draft edits (15.337751ms)
+✔ duplicate in-flight generation is rejected and cancellation preserves state (3.376975ms)
+✔ failed state write preserves previous draft and rolls back imported copy (1.839635ms)
+✔ missing files block final save; demo metadata stays explicit (1.943536ms)
+✔ deleted posts queue only owned media; failed cleanup is retryable (4.004247ms)
+✔ disk-backed save/reopen/delete and media copy survive actual adapter recreation (75.361757ms)
+✔ corrupt or future-version storage is never silently reset (0.805941ms)
+✔ invalid setup is rejected and callers cannot mutate stored values (11.763689ms)
+✔ completed posts do not consume the unfinished-draft quota (24.037836ms)
+✔ garbage limit rejects new removal safely and cleanup enables a retry (111.877042ms)
+✔ abort while result is queued behind another write prevents the result commit (2.966638ms)
+(node:27) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/service.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ browser database and photo bytes survive service and adapter recreation (49.437875ms)
+✔ competing browser tabs cannot silently overwrite a newer snapshot (10.157506ms)
+✔ aborted browser transactions preserve prior records and allow retry (8.027179ms)
+✔ failed snapshot commit rolls back new browser media while keeping previous shot (8.997089ms)
+✔ missing browser photo blocks completion without discarding text or draft (9.424961ms)
+✔ browser photo identifiers reject duplicates and outside deletion (6.645738ms)
+✔ unexpected browser snapshot types are preserved and rejected instead of reset (5.361132ms)
+(node:28) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/frontend.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ frontend mapping preserves full briefs and normalizes supported platform names (2.97532ms)
+✔ photo mapping requires actual metadata and never hides simulator provenance (0.462289ms)
+(node:34) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/service.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ topic and tone updates retain user text and title while removing obsolete templates (5.386137ms)
+✔ selecting the same reference preserves accepted shot and review revision (6.758965ms)
+✔ native saved photo paths rebase across iOS container changes without following originals (1.089928ms)
+✔ browser staging requires actual nonempty bytes and preserves metadata/provenance (0.66983ms)
+(node:35) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/intelligence.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ offline templates use topic and preserve platform/variant provenance without network (1.567435ms)
+✔ invalid briefs, platforms and fourth variants are rejected (6.442352ms)
+✔ maximum-length accepted briefs keep templates within platform limits (0.370381ms)
+✔ explicit opt-in, fixed loopback endpoint and local model names are enforced (0.50236ms)
+✔ installed local model preflight precedes bounded structured generation (4.41754ms)
+✔ missing, cloud-backed and unverifiable models fail before generation (22.297023ms)
+✔ malformed, excessive, wrong-platform and duplicate model output is rejected (5.095834ms)
+✔ photo comparison sends both image bytes in reference/capture order (1.194939ms)
+✔ demo images, HEIC and absent readers never trigger model requests (5.839538ms)
+✔ vision capability, image format and comparison results are validated (6.790668ms)
+✔ already-cancelled and mid-flight cancellation is propagated without fallback (0.700273ms)
+✔ unresponsive fetch is bounded by operation timeout (100.628862ms)
+(node:36) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/index.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ full local flow works with all network APIs blocked (4.451376ms)
+✔ empty or unrelated catalog returns explicit state without fake references (0.693018ms)
+✔ tag matching normalizes synonyms and keeps stable ordering (1.248514ms)
+✔ rejects unknown sports, platforms, styles and excessive input (0.70497ms)
+✔ only reviewed Unsplash references are accepted (0.667349ms)
+✔ rejects remote photos and invalid dimensions, limits photos and supports retakes (0.760605ms)
+✔ external mutations cannot change the catalog or stored session (0.419798ms)
+✔ session capacity and clearing are predictable (0.489448ms)
+✔ all caption styles produce separate platform copy without injecting photo prompt (0.721152ms)
+(node:42) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/tests/backend/helpers/node.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ records survive adapter recreation and ignore incomplete temporary writes (54.620766ms)
+✔ invalid save preserves existing bytes and subsequent saves still work (24.054575ms)
+✔ queued atomic writes leave a complete snapshot and no temporary copies (61.229651ms)
+✔ photo import copies and persists bytes, and remove never deletes original (12.585944ms)
+✔ duplicate imports fail without overwriting or removing the first copy (3.573677ms)
+✔ invalid paths, identifiers and outside deletion are rejected (8.81254ms)
+✔ missing, oversized and empty sources do not create stored media (3.108623ms)
+✔ existing symlink cannot redirect media overwrite or be treated as stored photo (2.37173ms)
+✔ demo marker is derived from origin and memory stores are explicitly ephemeral (0.648861ms)
+(node:82) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/services/captions.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ all selected platforms have distinct editable templates preserving the supplied topic (2.33015ms)
+✔ photo-only needs no invented caption and duplicates do not produce duplicate platforms (1.4406ms)
+✔ regeneration changes template text while retaining the user's facts (0.661379ms)
+✔ three successive templates are distinct for every platform and tone (0.650428ms)
+✔ unsupported runtime inputs are rejected without dropping a platform (0.521951ms)
+✔ local titles are bounded and derived only from the user's brief (0.435411ms)
+(node:94) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/lib/flow.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ photos skip the written brief; written posts never route to camera (0.877833ms)
+✔ platform selection supports multiple and removes only the toggled platform (1.208859ms)
+✔ camera route supports setup before platform selection and excludes written-only (0.382058ms)
+✔ reference controls wrap both directions without losing bounds (0.224584ms)
+(node:104) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/service.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ frontend fields map to the exact backend contract without dropping photo count (1.723764ms)
+✔ integrated photo and caption flow persists, maps to previews and rejects stale approvals (9.881797ms)
+✔ missing native/browser media retains caption text and marks the photo unavailable (1.099461ms)
+✔ legacy history stays visible without rewriting the old store and can be hidden independently (14.537176ms)
+✔ simulator selection prefers newest available iOS and excludes unavailable devices (8.25887ms)
+✔ simulator selection respects booted phone and explicit valid choice (0.317113ms)
+✔ simulator selection rejects missing, unavailable, non-iPhone and invalid IDs (0.518255ms)
+✔ Xcode local Node path works with a minimal GUI PATH and existing custom config is preserved (80.168664ms)
+(node:122) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/lib/flow.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ retaking one shot invalidates only its approval and count resize preserves earlier slots (1.021782ms)
+✔ enlarging the selected reference keeps checks and approval, changing it invalidates review (0.901255ms)
+✔ a photo result belongs only to the active shot that requested it (0.246661ms)
+✔ completion enforces every requested photo and every selected platform caption (0.788649ms)
+✔ restore validates schema and retains explicit sample provenance (2.125147ms)
+✔ resume returns the earliest incomplete stage for each branch (0.424905ms)
+✔ recovering a missing earlier photo selects that slot instead of trapping the last accepted shot (0.3765ms)
+✔ duplicate completion keys do not insert a second post (0.780117ms)
+✔ simultaneous completion taps share one operation, failed work can be retried (0.922765ms)
+(node:123) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/scratch/0449d662c579/integration/LarpIt/src/backend/service.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/scratch/0449d662c579/integration/LarpIt/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+react-test-renderer is deprecated. See https://react.dev/warnings/react-test-renderer
+react-test-renderer is deprecated. See https://react.dev/warnings/react-test-renderer
+react-test-renderer is deprecated. See https://react.dev/warnings/react-test-renderer
+✔ provider executes full photo and caption flow, rejects stale preview and saves once across reopen (44.542339ms)
+react-test-renderer is deprecated. See https://react.dev/warnings/react-test-renderer
+✔ provider written-only and photos-only paths keep their distinct requirements (21.73963ms)
+react-test-renderer is deprecated. See https://react.dev/warnings/react-test-renderer
+react-test-renderer is deprecated. See https://react.dev/warnings/react-test-renderer
+✔ provider rejects a late photo for a previous shot and retains an unfinished draft after reopen (5.837446ms)
+react-test-renderer is deprecated. See https://react.dev/warnings/react-test-renderer
+✔ provider shows failed storage operation without losing earlier draft and permits retry (4.645806ms)
+✔ provider reports unavailable storage on hydration and reloads saved data on retry (4.023698ms)
+ℹ tests 92
+ℹ suites 0
+ℹ pass 92
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1082.430481

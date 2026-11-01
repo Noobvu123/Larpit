@@ -1,0 +1,38 @@
+{
+  "typecheck": {
+    "exit_code": 0,
+    "last_lines": [
+      "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.",
+      "",
+      "> larpit@1.2.0 typecheck",
+      "> tsc --noEmit",
+      ""
+    ]
+  },
+  "lint": {
+    "exit_code": 0,
+    "last_lines": [
+      "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.",
+      "",
+      "> larpit@1.2.0 lint",
+      "> expo lint",
+      "",
+      "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm."
+    ]
+  },
+  "tests": {
+    "exit_code": 0,
+    "last_lines": [
+      "\u2714 provider shows failed storage operation without losing earlier draft and permits retry (4.645806ms)",
+      "\u2714 provider reports unavailable storage on hydration and reloads saved data on retry (4.023698ms)",
+      "\u2139 tests 92",
+      "\u2139 suites 0",
+      "\u2139 pass 92",
+      "\u2139 fail 0",
+      "\u2139 cancelled 0",
+      "\u2139 skipped 0",
+      "\u2139 todo 0",
+      "\u2139 duration_ms 1082.430481"
+    ]
+  }
+}
